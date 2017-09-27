@@ -1,10 +1,9 @@
-class Print(object):
-	def Main(args):
-		count = int.Parse(args[1])
-		i = 0
-		while i < count:
-			System.Threading.Thread.Sleep(1000)
-			System.Console.WriteLine("Joshua Fogg")
-			i += 1
+import sys
+import time
 
-	Main = staticmethod(Main)
+name = "Joshua Fogg"
+count = int(sys.argv[1])
+
+for i in range(0, count):
+    print name
+    time.sleep(1)
