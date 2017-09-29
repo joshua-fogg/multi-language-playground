@@ -1,0 +1,5 @@
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ last $USER
+joshuafo pts/5        118-92-156-124.d Thu Sep 28 19:53   still logged in   
+joshuafo pts/5        118-92-156-124.d Thu Sep 28 19:42 - 19:50  (00:07)    
+
+wtmp begins Mon Sep 25 04:13:23 2017

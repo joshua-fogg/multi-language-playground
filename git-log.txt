@@ -1,0 +1,20 @@
+*Git Log*
+
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ git log
+commit 1b59cfbd27b1095f117592dd1d08d2b1d6018ba9
+Author: Joshua Fogg <joshuafoggnz@gmail.com>
+Date:   Thu Sep 28 21:50:42 2017 -0400
+
+    completed T27, T28, T30
+
+commit 61c8f08e4f5580f084ee49eba3eced8549ec72fd
+Author: Joshua Fogg <joshuafoggnz@gmail.com>
+Date:   Thu Sep 28 20:29:31 2017 -0400
+
+    complete T28
+
+commit 35498ac6251e9b1fdba3dd8244125cc5e6f66513
+Author: Joshua Fogg <joshuafoggnz@gmail.com>
+Date:   Thu Sep 28 20:08:10 2017 -0400
+
+    add filler readme

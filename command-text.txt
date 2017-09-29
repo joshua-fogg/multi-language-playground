@@ -1,0 +1,251 @@
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ ls
+README.md  cSharpScript
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ cd cSharpScript/
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ ls
+PrintName.cs
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ mono -i PrintName.cs     
+Unknown command line option: '-i'
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ mono PrintName.cs
+Cannot open assembly 'PrintName.cs': File does not contain a valid CIL image.
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ ls  
+PrintName.cs
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ mcs PrintName.cs 
+PrintName.cs(4,25): error CS0103: The name `args' does not exist in the current context
+Compilation failed: 1 error(s), 0 warnings
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ ls 
+PrintName.cs
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ mcs PrintName.cs
+PrintName.cs(4,25): error CS0103: The name `args' does not exist in the current context
+Compilation failed: 1 error(s), 0 warnings
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ mono PrintName.cs
+Cannot open assembly 'PrintName.cs': File does not contain a valid CIL image.
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ ls 
+PrintName.cs
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ rm PrintName.cs 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ ls
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/cSharpScript$ cd ..          
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ ls
+README.md  cSharpScript
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ rm cSharpScript/
+rm: cannot remove 'cSharpScript/': Is a directory
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ mkdir C-Script
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ cd C-Script/
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ touch printname.c
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ vim printname.c 
+
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ ls
+printname.c
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ vim printname.c 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ ls
+printname.c
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ cim printname.c 
+-bash: cim: command not found
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ vim printname.c 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ gcc
+gcc: fatal error: no input files
+compilation terminated.
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ gcc printname.c -o printname 
+printname.c: In function 'main':
+printname.c:8:5: error: 'for' loop initial declarations are only allowed in C99 mode
+     for (int i = 0; i < count; i++) {
+     ^
+printname.c:8:5: note: use option -std=c99 or -std=gnu99 to compile your code
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ gcc printname.c -o printname -std=c99
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ ls
+printname  printname.c
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ run ./printname 4
+-bash: run: command not found
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ ./printname 4
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ vim printname.c
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ ls
+printname  printname.c
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/C-Script$ cd ..
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ ls
+C-Script  README.md  cSharpScript
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ mkdir CPP-Script
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ cd C
+C-Script/   CPP-Script/ 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ cd CPP-Script/
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ touch printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ vim printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ vim printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../PrintName.cs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../C-Script/
+	./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ git add -A
+warning: The behavior of 'git add --all (or -A)' with no path argument from a
+subdirectory of the tree will change in Git 2.0 and should not be used anymore.
+To add content for the whole tree, run:
+
+  git add --all :/
+  (or git add -A :/)
+
+To restrict the command to the current directory, run:
+
+  git add --all .
+  (or git add -A .)
+
+With the current Git version, the command is restricted to the current directory.
+
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ git add --all
+warning: The behavior of 'git add --all (or -A)' with no path argument from a
+subdirectory of the tree will change in Git 2.0 and should not be used anymore.
+To add content for the whole tree, run:
+
+  git add --all :/
+  (or git add -A :/)
+
+To restrict the command to the current directory, run:
+
+  git add --all .
+  (or git add -A .)
+
+With the current Git version, the command is restricted to the current directory.
+
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ls
+printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   printname.cpp
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../PrintName.cs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../C-Script/
+
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ls
+printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ls
+printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ clear
+
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ls
+printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ g++ printname.cpp
+In file included from /usr/include/c++/4.8/thread:35:0,
+                 from printname.cpp:2:
+/usr/include/c++/4.8/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+printname.cpp: In function 'int main(int, char**)':
+printname.cpp:9:17: error: 'stoi' is not a member of 'std'
+     int count = std::stoi(argv[1]);
+                 ^
+printname.cpp:11:9: error: 'this_thread' has not been declared
+         this_thread::sleep_for(chrono::seconds(1));
+         ^
+printname.cpp:11:32: error: 'chrono' has not been declared
+         this_thread::sleep_for(chrono::seconds(1));
+                                ^
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ g++ printname.cpp -std=c++11joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ls
+a.out  printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ./a.out 3
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ^C
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ ls
+a.out  printname.cpp
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/CPP-Script$ cd ..
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ ls
+C-Script  CPP-Script  README.md  cSharpScript
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ mkdir Bash-Script
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ cd Bash-Script/
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ls
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ touch printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ chmod +x printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 5
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 3
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ zsh
+-bash: zsh: command not found
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 3
+./printname.sh: line 3: 3]: No such file or directory
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh 
+
+[1]+  Stopped                 vim printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 3
+./printname.sh: line 3: [0: command not found
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 3
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+^[Joshua Fogg
+^C
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim -r printname.sh 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 3
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ vim printname.sh 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ls
+printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ./printname.sh 5
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ ls
+printname.sh
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Bash-Script$ cd ..
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ ls
+Bash-Script  C-Script  CPP-Script  README.md  cSharpScript
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ mkdir Python-Script
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo$ cd Python-Script/
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Python-Script$ touch printName.py
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Python-Script$ vim printName.py 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Python-Script$ vim printName.py 
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Python-Script$ python printName.py 3
+Joshua Fogg
+Joshua Fogg
+Joshua Fogg
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Python-Script$ git remote -v
+origin	/home/joshuafogg/git-repo (fetch)
+origin	/home/joshuafogg/git-repo (push)
+joshuafogg@InternEvaluation:~/git-repo-clone/git-repo/Python-Script$ git status
