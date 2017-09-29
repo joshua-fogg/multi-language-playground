@@ -1,6 +1,7 @@
 #!/bin/bash
-  for i in `seq 1 $1`;
-        do
+        COUNTER=0
+        while  [ $COUNTER -lt $1 ]; do
                 echo "Joshua Fogg"
                 sleep 1
-        done 
+                let "COUNTER++"
+        done
